@@ -1,0 +1,345 @@
+
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Viva Sorte</title>
+  <link href="../css/style.css?v=9" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y9TPJM22ED"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-Y9TPJM22ED');
+</script>
+
+
+  
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '774564267570472');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=774564267570472&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
+
+</head>
+
+<body>
+
+  <head>
+  <link href="../css/topo.css?v=1234256" rel="stylesheet">
+</head>
+
+
+<div class="topo">
+    <img src="../img/logo.svg">
+</div>
+
+  
+
+  <div class="container-principal">
+
+
+    <!-- BANNER -->
+    
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <div class="tag-compre-agora">
+            <span>Compre agora!</span>
+          </div>
+
+          <img src="../img/banner-19-mai.jpg" class="d-block w-100" alt="...">
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="infos-banner">
+            <h1>Viva Sorte - 19/05/2024</h1> 
+            <h2>DOM, 19 MAI · 2024</h2> 
+            <h3>CONCORRA A UMA BMW + 9 CARROS 0KM POR APENAS 99 CENTAVOS!</h3>        
+    </div>
+
+   
+
+    <!-- COTAS -->
+
+    <div class="cotas">
+
+<!--      <h3>Comprar mais títulos aumenta suas chances de ganhar!</h3> -->
+
+      <div class="cotas-one">
+
+      <button type="button" class="cota" onclick="selecionarValor(10)">
+                <div class="cota-qtd">
+                    <i class="bi bi-database-fill"></i> 10
+                </div>
+                <h1>R$9,90</h1>
+                <h2>SELECIONAR</h2>
+            </button>
+
+            <button type="button" class="cota" onclick="selecionarValor(20)">
+                <div class="cota-qtd">
+                    <i class="bi bi-database-fill"></i> 20
+                </div>
+                <h1>R$19,80</h1>
+                <h2>SELECIONAR</h2>
+            </button>
+
+            <button type="button" class="cota" onclick="selecionarValor(50)">
+
+                <i class="bi bi-star-fill destaque"></i>
+                <div class="cota-qtd">
+                    <i class="bi bi-database-fill"></i> 50
+                </div>
+                <h1>R$49,50</h1>
+                <h2>SELECIONAR</h2>
+            </button>
+
+      </div>
+
+
+      <div class="cotas-one">
+
+        <button type="button" class="cota" onclick="selecionarValor(100)">
+        <div class="cota-qtd">
+            <i class="bi bi-database-fill"></i> 100
+        </div>
+        <h1>R$99,00</h1>
+        <h2>SELECIONAR</h2>
+    </button>
+
+            <button type="button" class="cota" onclick="selecionarValor(200)">
+                <div class="cota-qtd">
+                    <i class="bi bi-database-fill"></i> 200
+                </div>
+                <h1>R$198,00</h1>
+                <h2>SELECIONAR</h2>
+            </button>
+
+            <button type="button" class="cota" onclick="selecionarValor(500)">
+                <div class="cota-qtd">
+                    <i class="bi bi-database-fill"></i> 500
+                </div>
+                <h1>R$495,00</h1>
+                <h2>SELECIONAR</h2>
+            </button>
+
+      </div>
+
+
+      <div class="contador-cotas">
+        <span>
+            <button type="button" class="btn-contador-cotas" onclick="decrementar()">-</button>
+        </span>
+        <input type="number" id="numero" class="input-contador-cotas" value="0" min="0" oninput="highlightButton()">
+        <span>
+            <button type="button" class="btn-contador-cotas" onclick="incrementar()">+</button>
+        </span>
+    </div>
+
+    <button type="button" id="btn-adicionar-carrinho" class="adc-carrinho" onclick="adicionarAoCarrinho()" disabled>
+        <i class="bi bi-cart-fill"></i> Comprar
+    </button>
+
+    </div>
+
+  </div>
+
+
+  <head>
+  <link href="../css/rodape.css?v=1234256" rel="stylesheet">
+</head>
+
+<div class="rodape">
+    <div class="container-principal">
+        <img class="logo-rodape" src="../img/logo.png"/>
+
+        <div class="redes">
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-youtube"></i>
+        </div>
+
+        <h1>Sorteios lastreados por Títulos de Capitalização, da Modalidade Incentivo, emitidos pela VIA Capitalização S.A, inscrita no CNPJ sob nº 88.076.302/0001-94, e aprovados pela SUSEP através do registro na SUSEP Sorteio n° 15414.652257/2023-51. O valor das premiações aqui indicados são líquidos, já descontado o devido imposto de renda de 25%. O registro deste plano na SUSEP não implica, por parte da Autarquia, incentivo ou recomendação a sua comercialização.</h1>
+        
+        <div class="linha-rodape"></div>
+
+        <div class="patterns-rodape">
+            <div class="pattern-rodape">
+                Títulos emitidos por:
+                <img src="../img/viacap.png"/>
+            </div>
+
+            <div class="pattern-rodape">
+                Promoção realizada por:
+                <img src="../img/viva.png"/>
+            </div>
+
+            <div class="pattern-rodape">
+                Desenvolvimento:
+                <img src="../img/edjdigital.png"/>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+  <!-- BOTÃO + E - -->
+  <script>
+    function incrementar() {
+        var input = document.getElementById('numero');
+        var valorAtual = parseInt(input.value);
+        if (valorAtual < 500) {
+            if (valorAtual === 0) {
+                input.value = 10;
+            } else if (valorAtual === 10) {
+                input.value = 20;
+            } else if (valorAtual === 20) {
+                input.value = 50;
+            } else if (valorAtual === 50) {
+                input.value = 100;
+            } else if (valorAtual === 100) {
+                input.value = 200;
+            } else if (valorAtual === 200) {
+                input.value = 500;
+            }
+        }
+        highlightButton();
+    }
+
+    function decrementar() {
+        var input = document.getElementById('numero');
+        var valorAtual = parseInt(input.value);
+        if (valorAtual > 10) {
+            if (valorAtual === 500) {
+                input.value = 200;
+            } else if (valorAtual === 200) {
+                input.value = 100;
+            } else if (valorAtual === 100) {
+                input.value = 50;
+            } else if (valorAtual === 50) {
+                input.value = 20;
+            } else if (valorAtual === 20) {
+                input.value = 10;
+            }
+        }
+        highlightButton();
+    }
+
+    function highlightButton() {
+        var input = document.getElementById('numero');
+        var valorAtual = parseInt(input.value);
+        var botoesCotas = document.querySelectorAll('.cota');
+        var botaoAdicionarCarrinho = document.getElementById('btn-adicionar-carrinho');
+        var link;
+
+        botoesCotas.forEach(function (botao) {
+            botao.classList.remove('cota-selected');
+            var valorBotao = parseInt(botao.querySelector('.cota-qtd').innerText.trim());
+            if (valorBotao === valorAtual) {
+                botao.classList.add('cota-selected');
+                switch (valorBotao) {
+                    case 10:
+                        link = "https://pay.seustitulosvivasorte.com/4KovG1JlQ2EgyDE";
+                        break;
+                    case 20:
+                        link = "https://pay.seustitulosvivasorte.com/lqv1302oypLGxbj";
+                        break;
+                    case 50:
+                        link = "https://pay.seustitulosvivasorte.com/4KovG1JlQ0VgyDE";
+                        break;
+                    case 100:
+                        link = "https://pay.seustitulosvivasorte.com/a9ArZMYml2OZ7xj";
+                        break;
+                    case 200:
+                        link = "https://pay.seustitulosvivasorte.com/bz5KZb70Va6G7dL";
+                        break;
+                    case 500:
+                        link = "https://pay.seustitulosvivasorte.com/DPXw3Xr2eVOGzmp";
+                        break;
+                    default:
+                        break;
+                }
+                botaoAdicionarCarrinho.setAttribute('onclick', 'adicionarAoCarrinho("' + link + '")');
+            }
+        });
+
+        if (valorAtual === 0) {
+            botaoAdicionarCarrinho.disabled = true;
+        } else {
+            botaoAdicionarCarrinho.disabled = false;
+        }
+    }
+
+    function selecionarValor(valor) {
+        var input = document.getElementById('numero');
+        input.value = valor;
+        highlightButton();
+    }
+
+    function adicionarAoCarrinho(link) {
+        window.location.href = link;
+    }
+
+    // Bloqueie a entrada manual no campo de entrada
+    document.getElementById('numero').addEventListener('input', function () {
+        this.value = this.value.replace(/[^0-9]/g, ''); // Apenas números permitidos
+        var valor = parseInt(this.value);
+        if (valor > 500) {
+            this.value = 500;
+        } else if (valor < 10) {
+            this.value = 0;
+        } else if (valor % 10 !== 0) {
+            this.value = Math.floor(valor / 10) * 10;
+        }
+        highlightButton();
+    });
+
+</script>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>
